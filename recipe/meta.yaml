@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - mdanalysis >1.0.0
@@ -39,7 +40,7 @@ test:
 about:
   home: https://github.com/IAlibay/MDRestraintsGenerator/
   summary: Enabling the use of restraints in alchemical simulations
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_file: LICENSE
 
 extra:
