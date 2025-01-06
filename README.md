@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdrestraintsgen
 
 Home: https://github.com/IAlibay/MDRestraintsGenerator/
 
-Package license: LGPL-3.0
+Package license: LGPL-3.0-only
 
 Summary: Enabling the use of restraints in alchemical simulations
 
