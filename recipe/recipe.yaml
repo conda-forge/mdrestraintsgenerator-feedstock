@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/MDRestraintsGenerator-${{ version }}.tar.gz
   sha256: 031e96539e9fae0048b501026f5d596e518693bf8f4ada3afc80e37c284e98d3
+  patches:
+    - fix-deps.patch
 
 build:
   number: 2
@@ -32,9 +34,7 @@ tests:
       imports:
         - MDRestraintsGenerator
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - python ${{ python_min }}.*
+
 about:
   summary: Enabling the use of restraints in alchemical simulations
   license: LGPL-3.0-only
